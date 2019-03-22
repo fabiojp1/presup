@@ -104,11 +104,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{url('categorias')}}" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
               <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
+                Categorias
+               
               </p>
             </a>
           </li>
@@ -142,7 +142,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-       
+        <div class="row">
+        @if(count($errors))
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        </div>
+        <div class="row">
+        @if(session('info'))
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="alert alert-success">
+                                {{session('info')}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        </div>
+        <div class="row">
         @yield('content')
       </div><!-- /.container-fluid -->
     </div>
