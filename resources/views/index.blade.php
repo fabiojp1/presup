@@ -13,7 +13,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Codigo</th>
+                    <th>ID</th>
                     <th>Categoria</th>
                     <th>Acciones</th>
                 </tr>
@@ -61,8 +61,8 @@
                 <label for="exampleInputEmail1">Categoria</label>
                 <input type="text" class="form-control" placeholder="Categoria" name="categoria">
                 </div>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
 
             </form>
         </div>

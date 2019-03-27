@@ -6,13 +6,13 @@
 
         <div class="card">
             <div class="card-body">
-            <form action="{{route('categorias.update',$categoria->id)}}" method="POST">
+            <form action="{{route('Marcas.update',$marca->id)}}" method="POST">
                     @csrf
                     @method('PUT')
-                    <input type="text" value="{{$categoria->id}}" hidden name="id">
+                    <input type="text" value="{{$marca->id}}" hidden name="id">
                     <div class="form-group">
-                    <label for="exampleInputEmail1">Categoria</label>
-                    <input type="text" class="form-control" value="{{$categoria->categoria}}" name="categoria">
+                    <label for="exampleInputEmail1">Marca</label>
+                    <input type="text" class="form-control" value="{{$marca->marca}}" name="marca">
                     </div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     <button type="submit" class="btn btn-primary">Guardar Cambios</button>

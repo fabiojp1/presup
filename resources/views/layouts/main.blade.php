@@ -19,7 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="wrapper" id="app">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+  <nav class="main-header navbar navbar-expand border-bottom navbar-dark bg-info">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -108,6 +108,33 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Categorias
+               
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('Marcas')}}" class="nav-link">
+              <i class="nav-icon fa fa-th"></i>
+              <p>
+                Marcas
+               
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('Clientes')}}" class="nav-link">
+              <i class="nav-icon fa fa-th"></i>
+              <p>
+                Clientes
+               
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('Productos')}}" class="nav-link">
+              <i class="nav-icon fa fa-th"></i>
+              <p>
+                Productos
                
               </p>
             </a>
